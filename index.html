@@ -1,0 +1,38 @@
+<body>
+    <div class="container mx-auto p-8 text-white">
+        <h1 class="text-4xl font-bold text-center mb-8">Dota 2 Rank Calculator</h1>
+
+        <!-- MMR Input Section -->
+        <div class="mb-8">
+            <label for="mmrInput" class="block text-lg font-semibold mb-2">Enter your MMR:</label>
+            <input id="mmrInput" type="number" class="w-full p-4 rounded-lg bg-gray-800 text-white" placeholder="Enter your MMR">
+        </div>
+
+        <!-- Rank Display Section -->
+        <div class="text-center mb-8">
+            <img id="rankIcon" src="" alt="Rank Icon" class="w-32 h-32 mx-auto mb-4">
+            <h2 id="rankName" class="text-2xl font-bold">Rank</h2>
+        </div>
+
+        <!-- Price Display Section -->
+        <div class="text-center mb-8">
+            <h3 class="text-lg font-semibold">Boost Price:</h3>
+            <p id="priceOut" class="text-2xl font-bold text-green-500">$0.00</p>
+        </div>
+
+        <!-- Behavior Score Section -->
+        <div class="mb-8">
+            <label for="scoreRange" class="block text-lg font-semibold mb-2">Behavior Score:</label>
+            <input id="scoreRange" type="range" min="0" max="12000" value="6000" class="w-full">
+            <div class="flex justify-between text-sm mt-2">
+                <span>0</span>
+                <span id="scoreVal">6000</span>
+                <span>12000</span>
+            </div>
+            <div class="relative h-4 bg-gray-700 rounded-lg mt-2">
+                <div id="scoreBar" class="h-full bg-orange-500 transition-all" style="width: 50%;"></div>
+            </div>
+            <p id="statusLabel" class="text-center mt-2 text-lg font-bold text-orange-500">Warning</p>
+        </div>
+    </div>
+</body>
